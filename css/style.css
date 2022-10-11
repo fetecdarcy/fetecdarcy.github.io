@@ -250,7 +250,7 @@ img#bgfetec {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 20vw;
 }
 
