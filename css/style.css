@@ -20,6 +20,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 a {
     color: #f0f0f0;
 }
@@ -33,6 +37,10 @@ a.button {
 
 a.button:hover {
     color: #21b9f5;
+}
+
+.sumi {
+    display: initial;
 }
 
 h1 {
@@ -55,6 +63,10 @@ i {
 
 /*HEADER*/
 
+#btn-mobile {
+    display: none;
+}
+
 #header {
     display: flex;
     position: sticky;
@@ -69,8 +81,8 @@ i {
 
 #nav {
     display: flex;
-    flex-direction: row;
     width: 100vw;
+    flex-direction: row;
     justify-content: space-around;
     color: #f0f0f0;
 }
@@ -109,7 +121,6 @@ i {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
 }
 
 #fet {
@@ -125,11 +136,8 @@ i {
 }
 
 img#bgfetec {
-    position: sticky;
-    top: 0;
-    z-index: -1;
     height: 100vh;
-    width: 100vw;
+    min-width: 100vw;
 }
 
 #fetec a.button {
@@ -182,7 +190,6 @@ img#bgfetec {
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 5vh 0;
-    row-gap: 5vh;
     width: 100vw;
     min-height: 80vh;
     background-color: #f0f0f0;  
@@ -190,7 +197,7 @@ img#bgfetec {
 
 #fotoetec {
     border-radius: 5000px;
-    height: 50vh;
+    width: 50vw;
 }
 
 #fotoetec:hover {
@@ -199,11 +206,18 @@ img#bgfetec {
 
 #informatica {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 10px 0;
     background: #0f0f0f;
     color: #f0f0f0;
+}
+
+#informatica iframe { 
+    width: 560px;
+    height: 315px;
 }
 
 #informatica iframe:hover {
@@ -214,12 +228,13 @@ img#bgfetec {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 40vw;
+    width: 40vw;
 }
 
 #exposicoes {
     display: flex;
     min-height: 100vh;
+    width: 100vw;
     flex-direction: column;
     justify-content: center;
     gap: 100px;
@@ -255,6 +270,10 @@ img#bgfetec {
     height: 30vh;
 }
 
+.ne img {
+    width: 20vw;
+}
+
 /*FOOTER*/
 
 #footer {
@@ -266,4 +285,101 @@ img#bgfetec {
     background-color: #0f0f0f;
     color: #f0f0f0;
     height: 100px;
+    width: 100vw;
+}
+
+@media (max-width:600px) {
+
+    .sumi {
+        display: none;
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburger {
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        color: #f0f0f0;
+        animation: fadeIn;
+        animation-delay: 1s;
+    }
+
+    #hamburger::after, #hamburger::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent; 
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+    
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);      
+        top: -7px;  
+    }
+
+    #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        padding: 15px;
+        width: 100%;
+        right: 0px;
+        top: 85px;
+        background-color: #0f0f0f;
+        height: 0;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: .6s;
+        z-index: 1000;
+    }
+    
+    #nav.active #menu {
+        visibility: visible;
+        overflow-y: auto;
+        height: 20vh;
+    }
+
+    #fet {
+        max-width: 80vw;
+    }
+
+    #et {
+        width: 80vw;
+    }
+
+    img#fotoetec {
+        display: none;
+    }
+
+    #informatica iframe { 
+        width: 80vw;
+        height: 315px;
+    }
+
+    #texto {
+        width: 80vw;
+    }
+
 }
