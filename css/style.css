@@ -231,7 +231,7 @@ img#bgfetec {
     width: 40vw;
 }
 
-#exposicoes {
+.exposicoes {
     display: flex;
     min-height: 100vh;
     width: 100vw;
@@ -242,7 +242,7 @@ img#bgfetec {
     background-color: #f0f0f0;
 }
 
-#exposicoes #div {
+.exposicoes .div {
     display: flex;
     justify-content: space-between;
     width: 75vw;
