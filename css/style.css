@@ -137,6 +137,7 @@ i {
 
 img#bgfetec {
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 #fetec a.button {
@@ -358,6 +359,10 @@ img#bgfetec {
         visibility: visible;
         overflow-y: auto;
         height: 20vh;
+    }
+    
+    img#bgfetec {
+        min-width: auto;
     }
 
     #fet {
