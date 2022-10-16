@@ -136,7 +136,7 @@ i {
 }
 
 img#bgfetec {
-    min-width: 100vw;
+    min-height: 100vh;
 }
 
 #fetec a.button {
