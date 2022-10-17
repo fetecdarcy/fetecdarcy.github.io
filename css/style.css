@@ -28,6 +28,14 @@ a {
     color: #f0f0f0;
 }
 
+a.dark {
+    color: #0f0f0f;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;   
+}
+
 a.button {
     color: #f0f0f0;
     border-radius: 5px;
