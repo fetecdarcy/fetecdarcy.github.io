@@ -320,6 +320,10 @@ a.button {
     color: #0f0f0f;
 }
 
+.expo img {
+    width: 300px;
+}
+
 .exposicoe {
     display: flex;
     flex-wrap: wrap;
