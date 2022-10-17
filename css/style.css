@@ -338,6 +338,34 @@ a.button {
     background-color: #f0f0f0;
 }
 
+.equipe {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 80vh;
+    background-color: #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.equipe .iframe {
+    width: 50vw;
+}
+
+.flex {
+    display: flex;
+    width: 80vw;
+    gap: 5vw;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.txt {
+    width: 20vw;
+}
+
 /*FOOTER*/
 
 #footer {
