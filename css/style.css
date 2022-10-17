@@ -258,6 +258,7 @@ img#bgfetec {
 
 a.button {
     background-color: #0f0f0f;
+    z-index: 1;
 }
 
 .ne {
@@ -268,6 +269,10 @@ a.button {
     justify-content: space-between;
     width: 20vw;
     height: 35vh;
+}
+
+.ne p {
+    z-index: 1;
 }
 
 .ne img {
