@@ -338,6 +338,7 @@ a.button {
     background-color: #f0f0f0;
 }
 
+
 .equipe {
     display: flex;
     flex-direction: column;
@@ -350,7 +351,7 @@ a.button {
 }
 
 .equipe .iframe {
-    width: 50vw;
+    max-width: 80vw;
 }
 
 .flex {
@@ -360,10 +361,11 @@ a.button {
     align-items: center;
     text-align: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.txt {
-    width: 20vw;
+.tx {
+    width: 400px;
 }
 
 /*FOOTER*/
