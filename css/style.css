@@ -322,6 +322,7 @@ a.button {
 
 .exposicoe {
     display: flex;
+    flex-wrap: wrap;
     width: 80vw;
     justify-content: space-around;
     align-items: center;
