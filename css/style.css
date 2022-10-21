@@ -1,5 +1,8 @@
 @charset "UTF-8";
-
+var {
+    --background-color: #f0f0f0;
+    --font-color: #0f0f0f;
+}
 /*GERAIS*/
 * {
     margin: 0;
@@ -30,7 +33,7 @@ a {
 }
 
 a.dark {
-    color: #0f0f0f;
+    color: var(--font-color);
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -190,6 +193,7 @@ input:checked + .slider:before {
 
 #inline {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -203,7 +207,8 @@ input:checked + .slider:before {
     position: absolute;
     max-width: 50vw;
     margin-left: 10vw;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 img#bgfetec {
@@ -224,7 +229,7 @@ img#bgfetec {
     justify-content: center;
     width: 100vw;
     position: absolute;
-    bottom: 50px;
+    bottom: 0px;
 }
 
 #bot button {
@@ -263,7 +268,8 @@ img#bgfetec {
     padding: 5vh 0;
     width: 100vw;
     min-height: 80vh;
-    background-color: #f0f0f0;  
+    background-color: var(--background-color);
+    color: var(--font-color);  
 }
 
 #fotoetec {
@@ -310,7 +316,13 @@ img#bgfetec {
     justify-content: center;
     gap: 100px;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
+    color: var(--font-color);
+}
+
+.exposicoes#d {
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .exposicoes .div {
@@ -366,6 +378,41 @@ a.button {
     background-color: #0f0f0f;
 }
 
+.apresentacao#app {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.apresentacao#app {
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.apresentacao#app #aa p {
+    margin: 30px;
+}
+
+.apresentacao#app #mm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.apresentacao#app #mm a.button {
+    width: 15vw;
+}
+
+.apresentacao#app img {
+    width: 20vw;
+    margin: 10px;
+}
+
 .apresentacao img {
     width: 40vw;
 }
@@ -377,8 +424,9 @@ a.button {
 .expo {
     display: flex;
     padding: 5px;
-    border: 2px solid #0f0f0f;
-    color: #0f0f0f;
+    margin: 10px;
+    border: 2px solid var(--font-color);
+    color: var(--font-color);
     font-weight: 500;
     border-radius: 5px;
     flex-direction: column;
@@ -406,8 +454,10 @@ a.button {
     width: 80vw;
     justify-content: space-around;
     align-items: center;
-    background-color: #f0f0f0;
+    background-color: var(--background-color);
 }
+
+
 
 .equipe {
     display: flex;
