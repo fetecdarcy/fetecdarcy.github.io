@@ -295,6 +295,7 @@ img#bgfetec {
 .iframe { 
     width: 560px;
     height: 315px;
+    border-radius: 5px;
 }
 
 .iframe:hover {
@@ -415,6 +416,7 @@ a.button {
 
 .apresentacao img {
     width: 40vw;
+    border-radius: 5px;
 }
 
 .apresentacao p {
@@ -467,6 +469,11 @@ a.button {
     align-items: center;
     justify-content: center;
     gap: 10vh;
+}
+
+.equipe#d {
+    background-color: var(--background-color);
+    color: var(--font-color);
 }
 
 .equipe#j {
