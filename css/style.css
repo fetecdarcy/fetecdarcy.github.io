@@ -477,11 +477,11 @@ a.button {
 }
 
 .apresentacao#app2 {
-    color: var(--font-color);
-    background-color: var(--background-color);
+    color: #f0f0f0;
+    background-color: #21b9f5;
 }
 
-.apresentacao#app #aa p {
+.apresentacao#app2 #aa p {
     margin: 30px;
 }
 
@@ -504,10 +504,6 @@ a.button {
     margin: 10px;
 }
 
-.apresentacao#app2 img {
-    width: 20vw;
-    margin: 10px;
-}
 
 .apresentacao img {
     width: 40vw;
