@@ -468,7 +468,7 @@ a.button {
     margin: 10px;
 }
 
-.apresentacao#app2 {
+.apresentacao#appblue {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
@@ -476,17 +476,17 @@ a.button {
     background-color: #21b9f5;
 }
 
-.apresentacao#app2 {
+.apresentacao#appblue {
     color: #f0f0f0;
     background-color: #21b9f5;
 }
 
-.apresentacao#app2 #aa p {
+.apresentacao#appblue #aa p {
     margin: 30px;
 }
 
 
-.apresentacao#app2 #mm {
+.apresentacao#appblue #mm {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -495,11 +495,11 @@ a.button {
     flex-direction: column;
 }
 
-.apresentacao#app2 #mm a.button {
+.apresentacao#appblue #mm a.button {
     width: 15vw;
 }
 
-.apresentacao#app2 img {
+.apresentacao#appblue img {
     width: 20vw;
     margin: 10px;
 }
