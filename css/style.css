@@ -463,15 +463,48 @@ a.button {
     width: 15vw;
 }
 
+.apresentacao#app img {
+    width: 20vw;
+    margin: 10px;
+}
+
 .apresentacao#app2 {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    color: var(#f0f0f0);
-    background-color: var(#21b9f5);
+    color: #f0f0f0;
+    background-color: #21b9f5;
 }
 
-.apresentacao#app img {
+.apresentacao#app2 {
+    color: var(--font-color);
+    background-color: var(--background-color);
+}
+
+.apresentacao#app #aa p {
+    margin: 30px;
+}
+
+
+.apresentacao#app2 #mm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.apresentacao#app2 #mm a.button {
+    width: 15vw;
+}
+
+.apresentacao#app2 img {
+    width: 20vw;
+    margin: 10px;
+}
+
+.apresentacao#app2 img {
     width: 20vw;
     margin: 10px;
 }
