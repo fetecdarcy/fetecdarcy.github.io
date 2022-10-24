@@ -463,6 +463,14 @@ a.button {
     width: 15vw;
 }
 
+.apresentacao#app2 {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: var(#f0f0f0);
+    background-color: var(#21b9f5);
+}
+
 .apresentacao#app img {
     width: 20vw;
     margin: 10px;
