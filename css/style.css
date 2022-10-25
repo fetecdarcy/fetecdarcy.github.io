@@ -342,7 +342,7 @@ img:hover {
     display: flex;
     justify-content: space-between;
     width: 70vw;
-    height: 110vh;
+    height: 120vh;
     gap: 20px;
     flex-wrap: wrap;
 }
