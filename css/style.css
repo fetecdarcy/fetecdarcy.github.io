@@ -117,7 +117,7 @@ i {
     content: "";
     height: 13px;
     width: 13px;
-    left: 10px;
+    left: 4px;
     bottom: 4px;
     background-color: #f0f0f0;
     -webkit-transition: .4s;
@@ -503,6 +503,7 @@ a.button {
 
 .apresentacao#appblue #aa p {
     margin: 30px;
+    color: #f0f0f0;
 }
 
 
