@@ -487,7 +487,7 @@ a.button {
 }
 
 .apresentacao#appblue iframe {
-    background-color: var(--font-color);
+    background-color: var(--font-color2);
     width: 19.5vw;
     height: 78.8vh;
     margin: 0;
