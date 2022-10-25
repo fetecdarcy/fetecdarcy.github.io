@@ -10,7 +10,7 @@ var {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: century Gothic;
+    font-family: century Gothic, Arial, sans-serif;
     font-size: 100%;
     text-decoration: none;
     list-style: none;
@@ -180,6 +180,7 @@ input:checked + .slider:before {
 
 #nav ul {
     display: flex;
+    align-items: center;
     width: 300px;
     justify-content: space-between;
     color: #f0f0f099;
@@ -340,7 +341,8 @@ img:hover {
 .exposicoes .div {
     display: flex;
     justify-content: space-between;
-    width: 75vw;
+    width: 70vw;
+    height: 110vh;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -356,6 +358,7 @@ a.button {
     z-index: 1;
 }
 
+
 .ne {
     display: flex;
     text-align: center;
@@ -363,15 +366,23 @@ a.button {
     align-items: center;
     justify-content: space-between;
     width: 20vw;
+    align-content: center;
     height: 35vh;
+    margin: 0;
 }
 
 .ne p {
+    margin-top: 0;
+    margin-bottom: 12vh;
     z-index: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 0%;
 }
 
 .ne img {
     width: 20vw;
+    margin-bottom: 2vh;
 }
 
 /*pages*/
@@ -480,7 +491,7 @@ a.button {
     margin: 10px;
 }
 
-/*Cybertech-------------------------------------------*/
+/*Infotec-------------------------------------------*/
 .apresentacao#appblue iframe {
     background-color: #0f0f0f;
     width: 19.5vw;
@@ -496,6 +507,7 @@ a.button {
     background-color: #0f0f0f;
 }
 
+
 .apresentacao#appblue #aa p {
     margin: 30px;
 }
@@ -503,7 +515,7 @@ a.button {
 
 .apresentacao#appblue #mm {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     flex-wrap: wrap;
     width: 30vw;
@@ -633,77 +645,35 @@ a.button {
     border-top: 2px solid #f0f0f0;
 }
 
-@media (max-width:600px) {
+/**/
+
+
+
+@media (max-width:900px) {
 
     .sumi {
         display: none;
     }
 
-    #btn-mobile {
+    #nav {
         display: flex;
-        padding: .5rem 1rem;
-        font-size: 1rem;
-        border: none;
-        background: none;
-        cursor: pointer;
-        gap: .5rem;
-    }
-
-    #hamburger {
-        display: block;
-        width: 20px;
-        border-top: 2px solid;
-        color: #f0f0f0;
-        animation: fadeIn;
-        animation-delay: 1s;
-    }
-
-    #hamburger::after, #hamburger::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        background: currentColor;
-        margin-top: 5px;
-        transition: .3s;
-        position: relative;
-    }
-
-    #nav.active #hamburger {
-        border-top-color: transparent; 
-    }
-
-    #nav.active #hamburger::before {
-        transform: rotate(135deg);
-    }
-    
-    #nav.active #hamburger::after {
-        transform: rotate(-135deg);      
-        top: -7px;  
-    }
-
-    #menu {
-        display: flex;
-        flex-direction: column;
+        width: 100vw;
+        flex-direction: row;
         justify-content: space-around;
-        align-items: center;
-        position: absolute;
-        padding: 15px;
-        width: 100%;
-        right: 0px;
-        top: 85px;
-        background-color: #0f0f0f;
-        height: 0;
-        visibility: hidden;
-        overflow-y: hidden;
-        transition: .6s;
-        z-index: 1000;
+        color: #f0f0f0;
     }
-    
-    #nav.active #menu {
-        visibility: visible;
-        overflow-y: auto;
-        height: 20vh;
+
+    #nav ul {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        justify-content: space-between;
+        color: #f0f0f099;
+    }
+
+    #nav li a:hover {
+        cursor: pointer;
+        color: #21b9f5;
     }
 
     img#bgfetec {
@@ -730,5 +700,364 @@ a.button {
     #texto {
         width: 80vw;
     }
+    
+    #a.exposicoes h1 {
+        margin-bottom: 1px;
+    }
 
+    .exposicoes .div {
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        height: 150vh;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .ne {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+        align-content: center;
+        height: 1vh;
+        margin: 0;
+    }
+    
+    .ne p {
+        margin-top: 0;
+        margin-bottom: 23vh;
+        z-index: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 0%;
+    }
+    
+    .ne img {
+        width: 30vw;
+        margin-bottom: 0vh;
+    }
+}
+
+.apresentacao#appblue iframe {
+    background-color: #0f0f0f;
+    width: 20vw;
+    height: 20vh;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.apresentacao#appblue {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    color: #f0f0f0;
+    background-color: #0f0f0f;
+}
+
+
+.apresentacao#appblue #aa p {
+    margin: 30px;
+}
+
+
+.apresentacao#appblue #mm {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.apresentacao#appblue #mm a.button {
+    width: 15vw;
+}
+
+.apresentacao#appblue img {
+    width: 20vw;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .sumi {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #f0f0f0;
+    }
+
+    #nav ul {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        justify-content: space-between;
+        color: #f0f0f099;
+    }
+
+    #nav li a:hover {
+        cursor: pointer;
+        color: #21b9f5;
+    }
+
+    img#bgfetec {
+        min-width: auto;
+    }
+
+    #fet {
+        max-width: 80vw;
+    }
+
+    #et {
+        width: 80vw;
+    }
+
+    img#fotoetec {
+        display: none;
+    }
+
+    #informatica iframe { 
+        width: 80vw;
+        height: 315px;
+    }
+
+    #texto {
+        width: 80vw;
+    }
+    
+    #a.exposicoes h1 {
+        margin-bottom: 1px;
+    }
+
+    .exposicoes .div {
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        height: 160vh;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .ne {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+        align-content: center;
+        height: 1vh;
+        margin: 0;
+    }
+    
+    .ne p {
+        margin-top: 0;
+        margin-bottom: 20vh;
+        z-index: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 0%;
+    }
+    
+    .ne img {
+        width: 30vw;
+        margin-bottom: 0vh;
+    }
+}
+
+@media (max-width:400px) {
+
+    .sumi {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #f0f0f0;
+    }
+
+    #nav ul {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        justify-content: space-between;
+        color: #f0f0f099;
+    }
+
+    #nav li a:hover {
+        cursor: pointer;
+        color: #21b9f5;
+    }
+
+    img#bgfetec {
+        min-width: auto;
+    }
+
+    #fet {
+        max-width: 80vw;
+    }
+
+    #et {
+        width: 80vw;
+    }
+
+    img#fotoetec {
+        display: none;
+    }
+
+    #informatica iframe { 
+        width: 80vw;
+        height: 315px;
+    }
+
+    #texto {
+        width: 80vw;
+    }
+    
+    #a.exposicoes h1 {
+        margin-bottom: 1px;
+    }
+
+    .exposicoes .div {
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        height: 160vh;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .ne {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+        align-content: center;
+        height: 1vh;
+        margin: 0;
+    }
+    
+    .ne p {
+        margin-top: 0;
+        margin-bottom: 25vh;
+        z-index: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 0%;
+    }
+    
+    .ne img {
+        width: 30vw;
+        margin-bottom: 0vh;
+    }
+}
+
+@media (max-width:600px) {
+
+    .sumi {
+        display: none;
+    }
+
+    #nav {
+        display: flex;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #f0f0f0;
+        font-size: 4.2vw;
+    }
+
+    #nav ul {
+        display: flex;
+        align-items: center;
+        width: 70vw;
+        justify-content: space-between;
+        color: #f0f0f099;
+    }
+
+    #nav li a:hover {
+        cursor: pointer;
+        color: #21b9f5;
+    }
+
+    img#bgfetec {
+        min-width: auto;
+    }
+
+    #fet {
+        max-width: 80vw;
+    }
+
+    #et {
+        width: 80vw;
+    }
+
+    img#fotoetec {
+        display: none;
+    }
+
+    #informatica iframe { 
+        width: 80vw;
+        height: 315px;
+    }
+
+    #texto {
+        width: 80vw;
+    }
+    
+    #a.exposicoes h1 {
+        margin-bottom: 1px;
+    }
+
+    .exposicoes .div {
+        display: flex;
+        justify-content: space-between;
+        width: 75vw;
+        height: 160vh;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .ne {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 30vw;
+        align-content: center;
+        height: 1vh;
+        margin: 0;
+    }
+    
+    .ne p {
+        margin-top: 0;
+        margin-bottom: 30vh;
+        z-index: 1;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 0%;
+    }
+    
+    .ne img {
+        width: 30vw;
+        margin-bottom: 0vh;
+    }
 }
