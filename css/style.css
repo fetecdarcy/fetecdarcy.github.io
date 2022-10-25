@@ -448,12 +448,12 @@ a.button {
     justify-content: space-around;
     flex-direction: row;
     color: var(--font-color);
-    background-color: var(--background-color2);
+    background-color: var(--background-color);
 }
 
 .apresentacao#app {
     color: var(--font-color);
-    background-color: var(--background-color2);
+    background-color: var(--background-color);
 }
 
 .apresentacao#app #aa p {
