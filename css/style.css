@@ -493,12 +493,12 @@ a.button {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    color: var(--background-color);
+    color: var(--background-color2);
     background-color: var(--font-color2);
 }
 
 .apresentacao#appblue {
-    color: var(--background-color);
+    color: var(--background-color2);
     background-color: var(--font-color2);
 }
 
