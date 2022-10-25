@@ -15,7 +15,7 @@ btTheme.addEventListener('click', () => {
         document.body.style.setProperty('--background-color', 'black');
         document.body.style.setProperty('--background-color2', 'black');
         document.body.style.setProperty('--font-color', '#f0f0f0');
-        document.body.style.setProperty('--font-color', 'black');
+        document.body.style.setProperty('--font-color2', 'black');
         themeDark = true;
         localStorage.bt = themeDark;
     }
