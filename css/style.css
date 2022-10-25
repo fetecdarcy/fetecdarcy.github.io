@@ -1,8 +1,9 @@
 @charset "UTF-8";
 var {
     --background-color: #f0f0f0
-    --background-color: #f0f0f0;
+    --background-color2: #f0f0f0;
     --font-color: #0f0f0f;
+    --font-color2: #0f0f0f;
 }
 /*GERAIS*/
 * {
@@ -474,7 +475,7 @@ a.button {
 }
 
 .apresentacao#app iframe {
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
     width: 19.5vw;
     height: 78.8vh;
     margin: 0;
@@ -490,12 +491,12 @@ a.button {
     justify-content: space-around;
     flex-direction: row;
     color: var(--background-color);
-    background-color: var(--font-color);
+    background-color: var(--font-color2);
 }
 
 .apresentacao#appblue {
     color: var(--background-color);
-    background-color: var(--font-color);
+    background-color: var(--font-color2);
 }
 
 .apresentacao#appblue #aa p {
