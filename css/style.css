@@ -493,7 +493,7 @@ a.button {
     justify-content: space-around;
     flex-direction: row;
     color: #f0f0f0;
-    background-color: var(--font-color);
+    background-color: var(--font-color2);
 }
 
 .apresentacao#appblue #aa p {
