@@ -482,8 +482,12 @@ a.button {
 
 /*Cybertech-------------------------------------------*/
 
+.p2 {
+    color: #f0f0f0;
+}
+
 .apresentacao#appblue iframe {
-    background-color: var(--background-color2);
+    background-color: var(--font-color);
     width: 19.5vw;
     height: 78.8vh;
     margin: 0;
@@ -493,7 +497,7 @@ a.button {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    color: var(--background-color2);
+    color: #f0f0f0;
     background-color: var(--font-color2);
 }
 
