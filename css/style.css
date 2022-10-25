@@ -497,11 +497,6 @@ a.button {
     background-color: var(--font-color2);
 }
 
-.apresentacao#appblue {
-    color: var(--background-color2);
-    background-color: var(--font-color2);
-}
-
 .apresentacao#appblue #aa p {
     margin: 30px;
 }
