@@ -1,5 +1,6 @@
 @charset "UTF-8";
 var {
+    --background-color: #f0f0f0
     --background-color: #f0f0f0;
     --font-color: #0f0f0f;
 }
@@ -446,12 +447,12 @@ a.button {
     justify-content: space-around;
     flex-direction: row;
     color: var(--font-color);
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
 }
 
 .apresentacao#app {
     color: var(--font-color);
-    background-color: var(--background-color);
+    background-color: var(--background-color2);
 }
 
 .apresentacao#app #aa p {
