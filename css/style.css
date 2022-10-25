@@ -51,6 +51,15 @@ a.button:hover {
     color: #21b9f5;
 }
 
+a.buttonfalse {
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+a.buttonfalse:hover {
+    color: #21b9f5;
+}
+
 .sumi {
     display: initial;
 }
@@ -463,6 +472,13 @@ a.button {
     width: 15vw;
 }
 
+.apresentacao#app iframe {
+    background-color: var(--background-color);
+    width: 19.5vw;
+    height: 78.8vh;
+    margin: 0;
+}
+
 .apresentacao#app img {
     width: 20vw;
     margin: 10px;
@@ -472,13 +488,13 @@ a.button {
     align-items: center;
     justify-content: space-around;
     flex-direction: row;
-    color: #f0f0f0;
-    background-color: #21b9f5;
+    color: var(--background-color);
+    background-color: var(--font-color);
 }
 
 .apresentacao#appblue {
-    color: #f0f0f0;
-    background-color: #21b9f5;
+    color: var(--background-color);
+    background-color: var(--font-color);
 }
 
 .apresentacao#appblue #aa p {
