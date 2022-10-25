@@ -474,16 +474,19 @@ a.button {
     width: 15vw;
 }
 
-.apresentacao#app iframe {
-    background-color: var(--background-color2);
-    width: 19.5vw;
-    height: 78.8vh;
-    margin: 0;
-}
 
 .apresentacao#app img {
     width: 20vw;
     margin: 10px;
+}
+
+/*Cybertech-------------------------------------------*/
+
+.apresentacao#appblue iframe {
+    background-color: var(--background-color2);
+    width: 19.5vw;
+    height: 78.8vh;
+    margin: 0;
 }
 
 .apresentacao#appblue {
@@ -522,6 +525,7 @@ a.button {
     margin: 10px;
 }
 
+/*-------------------------------------------------------*/
 
 .apresentacao img {
     width: 40vw;
