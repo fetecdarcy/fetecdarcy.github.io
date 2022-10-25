@@ -342,7 +342,7 @@ img:hover {
     display: flex;
     justify-content: space-between;
     width: 70vw;
-    height: 120vh;
+    height: 110vh;
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -390,6 +390,7 @@ a.button {
 #guitar {
     display: flex;
     width: 100vw;
+    flex-wrap: wrap;
     height: 100vh;
     background-color: var(--background-color);
     color: var(--font-color);
@@ -401,7 +402,7 @@ a.button {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    width: 40vw;
+    width: 50vw;
 }
 
 #esquerda a.button {
@@ -410,8 +411,16 @@ a.button {
 }
 
 #guitar iframe {
+    display: flex;
+    gap: 50px;
+    margin-left: 0;
     border-radius: 10px;
     border: 2px solid var(--font-color);
+    flex-wrap: wrap;
+}
+
+#guita#esquerda{
+    flex-direction: column;
 }
 
 .exposicoes#espaco {
@@ -423,6 +432,7 @@ a.button {
     background-color: #0f0f0f;
 }
 
+
 .exposicoe#espaco {
     background-color: #0f0f0f;
     color: #f0f0f0;
@@ -431,9 +441,16 @@ a.button {
 .exposicoe#espaco .expo {
     align-items: center;
     justify-content: center;
-    width: 10vw;
+    width: 20vw;
     gap: 10px;
     border: 2px solid #f0f0f0;
+}
+
+.exposicoe#espaco .expo img {
+    width: 20vw;
+    border-left: 2px solid #f0f0f0;
+    border-right: 2px solid #f0f0f0;
+    border-top: 0;
 }
 
 .exposicoe#espaco a.button:hover i {
@@ -649,7 +666,7 @@ a.button {
 
 
 
-@media (max-width:900px) {
+@media (max-width:1024px) {
 
     .sumi {
         display: none;
@@ -740,48 +757,88 @@ a.button {
         width: 30vw;
         margin-bottom: 0vh;
     }
+
+
+    .apresentacao#appblue iframe {
+        background-color: #0f0f0f;
+        width: 20vw;
+        height: 20vh;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+
+    .apresentacao#appblue {
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        color: #f0f0f0;
+        background-color: #0f0f0f;
+    }
+
+
+    .apresentacao#appblue #aa p {
+        margin: 30px;
+    }
+
+
+    .apresentacao#appblue #mm {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 30vw;
+        flex-direction: column;
+    }
+
+    .apresentacao#appblue #mm a.button {
+        width: 15vw;
+    }
+
+    .apresentacao#appblue img {
+        width: 20vw;
+        margin: 10px;
+    }
+
+    #guitar {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        height: 110vh;
+        background-color: var(--background-color);
+        color: var(--font-color);
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #esquerda {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 5px;
+        width: 100vw;
+        margin-left: 2vw;
+    }
+
+    #esquerda a.button {
+        width: 35vw;
+        text-align: center;
+
+    }
+
+    #guitar iframe {
+        display: flex;
+        gap: 50px;
+        margin-left: 0;
+        border-radius: 10px;
+        border: 2px solid var(--font-color);
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    #guita#esquerda{
+        flex-direction: column;
+    }
 }
-
-.apresentacao#appblue iframe {
-    background-color: #0f0f0f;
-    width: 20vw;
-    height: 20vh;
-    margin: 0;
-    flex-wrap: wrap;
-}
-
-.apresentacao#appblue {
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    color: #f0f0f0;
-    background-color: #0f0f0f;
-}
-
-
-.apresentacao#appblue #aa p {
-    margin: 30px;
-}
-
-
-.apresentacao#appblue #mm {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 30vw;
-    flex-direction: column;
-}
-
-.apresentacao#appblue #mm a.button {
-    width: 15vw;
-}
-
-.apresentacao#appblue img {
-    width: 20vw;
-    margin: 10px;
-}
-
 @media (max-width: 600px) {
 
     .sumi {
@@ -872,6 +929,47 @@ a.button {
     .ne img {
         width: 30vw;
         margin-bottom: 0vh;
+    }
+
+
+    #guitar {
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        height: 130vh;
+        background-color: var(--background-color);
+        color: var(--font-color);
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    #esquerda {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        gap: 5px;
+        width: 100vw;
+        margin-left: 2vw;
+    }
+
+    #esquerda a.button {
+        width: 35vw;
+        text-align: center;
+
+    }
+
+    #guitar iframe {
+        display: flex;
+        gap: 50px;
+        margin-left: 0;
+        border-radius: 10px;
+        border: 2px solid var(--font-color);
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+
+    #guita#esquerda{
+        flex-direction: column;
     }
 }
 
