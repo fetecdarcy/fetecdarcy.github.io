@@ -838,6 +838,10 @@ a.button {
     #guita#esquerda{
         flex-direction: column;
     }
+
+    .equipe .iframe {
+        max-width: 60vw;
+    }
 }
 @media (max-width: 600px) {
 
@@ -971,6 +975,10 @@ a.button {
     #guita#esquerda{
         flex-direction: column;
     }
+
+    .equipe .iframe {
+        max-width: 40vw;
+    }
 }
 
 @media (max-width:400px) {
@@ -1064,9 +1072,14 @@ a.button {
         width: 30vw;
         margin-bottom: 0vh;
     }
+
+    .equipe .iframe {
+        max-width: 30vw;
+        flex-wrap: wrap;
+    }
 }
 
-@media (max-width:600px) {
+@media (max-width:200px) {
 
     .sumi {
         display: none;
@@ -1157,5 +1170,10 @@ a.button {
     .ne img {
         width: 30vw;
         margin-bottom: 0vh;
+    }
+
+    .equipe .iframe {
+        max-width: 15vw;
+        flex-wrap: wrap;
     }
 }
